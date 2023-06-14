@@ -1,0 +1,2 @@
+export const GOOGLE_MAPS_API_KEY = 'AIzaSyBs1PwgporJKABPGMbInlSiA6FKyDEEQJI'
+export const GIPHY_API_KEY = '6cX50ib0c43HB86oAsGuaWM27kIjAnRm'

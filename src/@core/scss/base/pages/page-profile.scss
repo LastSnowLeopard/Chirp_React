@@ -1,0 +1,163 @@
+// ================================================================================================
+// 	File Name: page-profile.scss
+// 	Description: Page content different types of users page layouts SCSS.
+// 	----------------------------------------------------------------------------------------------
+// 	Item Name: Chrip  - Vuejs, HTML & Laravel Admin Dashboard Template
+// 	Author: PIXINVENT
+// 	Author URL: http://www.themeforest.net/user/pixinvent
+// ================================================================================================
+
+@import '../bootstrap-extended/include'; // Bootstrap includes
+@import '../components/include'; // Components includes
+
+
+
+.profile-likes {
+  fill: $primary !important;
+  stroke: $white !important;
+}
+
+// User profile Scss
+#user-profile {
+  /*-------------profile header section---------*/
+  .profile-header {
+    overflow: visible;
+
+    // profile picture container
+    .profile-img-container {
+      position: absolute;
+      bottom: -13rem;
+      left: 45%;
+      z-index: 2;
+      
+
+      // profile image
+      .profile-img {
+        height: 11.92rem;
+        width: 11.92rem;
+        border: 0.357rem solid $white;
+        background-color: $white;
+        // border-radius: $card-border-radius;
+        border-radius: 50%;
+        box-shadow: $box-shadow;
+      }
+    }
+
+    // profile navbar padding
+    .profile-header-nav {
+      margin-top: 13rem;
+      .navbar {
+        padding: 0.8rem 1rem;
+
+        // navbar toggle button
+        .navbar-toggler {
+          line-height: 0;
+        }
+        .profile-tabs {
+          .nav-item {
+            i,
+            svg {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .profile-likes {
+    fill: $primary !important;
+    stroke: $white !important;
+  }
+  /*-------- profile info section --------*/
+  #profile-info {
+    // profile star icons
+    .profile-star {
+      color: $gray-100;
+
+      i,
+      svg {
+        // filled star icons
+        &.profile-favorite {
+          fill: $warning;
+          stroke: $warning;
+        }
+      }
+    }
+
+    // filled heart icons
+    .profile-likes {
+      fill: $primary !important;
+      stroke: $primary !important;
+    }
+
+    // progress-bar height
+    .profile-polls-info {
+      .progress {
+        height: 0.42rem;
+      }
+    }
+  }
+
+  //profile-latest-img - hover effect
+  .profile-latest-img {
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transform: translateY(-4px) scale(1.2);
+      z-index: 10;
+    }
+    img {
+      margin-top: 1.28rem;
+    }
+  }
+
+  // Load More Button - Block UI
+  .block-element {
+    .spinner-border {
+      border-width: 0.14rem;
+    }
+  }
+}
+
+// Latest Photo Section - Image size
+@include media-breakpoint-down(lg) {
+  #user-profile {
+    .profile-latest-img {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+ 
+  
+  // navbar tabs pills
+  .profile-header-nav {
+    .profile-tabs {
+      width: 100%;
+      // margin-left: 13.2rem;
+      margin-left: 1rem;
+    }
+  }
+}
+
+// profile img and title
+@include media-breakpoint-down(sm) {
+  #user-profile {
+    .profile-header {
+      .profile-img-container {
+        .profile-img {
+          height: 100px;
+          width: 100px;
+        }
+        .profile-title {
+          h2 {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}

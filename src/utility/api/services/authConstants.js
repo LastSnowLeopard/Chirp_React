@@ -1,0 +1,5 @@
+export const httpSignin = 'http://13.50.151.52/chrip/api/auth/login'
+export const httpSignup = 'http://13.50.151.52/chrip/api/auth/user-registration'
+export const httpForgetPassword = 'http://13.50.151.52/chrip/api/auth/forget-password'
+export const httpVerifyPassword = 'http://13.50.151.52/chrip/api/auth/verify-password-link'
+export const httpResetPassword = 'http://13.50.151.52/chrip/api/auth/reset-password'

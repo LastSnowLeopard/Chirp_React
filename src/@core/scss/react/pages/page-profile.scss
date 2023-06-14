@@ -1,0 +1,56 @@
+// Profile
+// =======================================================================
+@import '../../base/bootstrap-extended/include';
+@import '../../base/pages/page-profile';
+
+#user-profile {
+  // padding: 0 14rem;
+  .profile-load-more {
+    position: relative;
+    overflow: hidden;
+    .ui-loader {
+      position: unset;
+      .overlay {
+        left: 0;
+      }
+      .loader {
+        top: 62%;
+      }
+      .spinner-border {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+.profile-user-info{
+
+  // background-color: #F0F2F5 !important;
+  border-radius: 10px;
+  width: fit-content;
+
+}
+
+@include media-breakpoint-up(md) {
+  // navbar tabs pills
+  .profile-header-nav {
+    .profile-tabs {
+      // margin-left: 11.1rem;
+      margin-left: 1rem;
+    }
+  }
+}
+
+
+@include media-breakpoint-down(md) {
+  #user-profile{
+    // padding: 0px;
+    .profile-img-container{
+      bottom:-14rem !important;
+      left: 40% !important;
+      flex-direction: column;
+      bottom: -5rem;
+    }
+  }
+}
