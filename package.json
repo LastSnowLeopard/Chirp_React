@@ -55,6 +55,7 @@
     "react-dom": "^18.1.0",
     "react-draft-wysiwyg": "^1.14.7",
     "react-dropzone": "^14.2.1",
+    "react-easy-crop": "^4.7.4",
     "react-feather": "~2.0.3",
     "react-flatpickr": "^3.10.12",
     "react-google-autocomplete": "^2.7.3",
@@ -90,7 +91,7 @@
     "yup": "^0.32.11"
   },
   "scripts": {
-    "start": "craco start",
+    "start": "craco --openssl-legacy-provider start",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
